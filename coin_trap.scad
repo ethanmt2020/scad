@@ -20,4 +20,12 @@ difference() {
     }
 translate([0,0,-coin_d]) cylinder(h=coin_d*2,d=coin_d*0.66);
     rotate([90,0,0]) translate([0,0,-coin_d]) cylinder(h=coin_d*2,d=coin*0.66);
-    rotate([0,90,0]) translate([0,0,-coin_d]) cylinder
+    rotate([0,90,0]) translate([0,0,-coin_d]) cylinder(h=coin_d*2, r-coin_d*.33);
+    sphere(r=coin_d/2+gap);
+translate([coin_d*.825,0,0]) sphere(r=coin_d/2);
+    translate([coin_d*-.825,0,0]) sphere(r=coin_d/2);
+    translate([coin_d*.825,0]) sphere(r=coin_d/2);
+    translate([coin_d*-.825,0]) sphere(r=coin_d/2);
+    translate([coin_d*.825]) sphere(r=coin_d/2);
+    translate([coin_d*-.825]) sphere(r=coin_d/2);
+}
